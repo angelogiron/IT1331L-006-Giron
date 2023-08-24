@@ -29,9 +29,31 @@
         tableHTML += '<tr><th> Animal ID</th><th> Animal Name</th><th> Owner Name</th><th> Weight</th><th> Age</th></tr>';
            //Animals with their Information
         const animals = [
-            { id: 1, name:"Fluffy", owner: "Nice", weight: 12, age: 3 },
-            { id: 2, name:"Max", owner: "Bob", weight: 20, age: 5 }
+            { id: 1, name:"Fluffy", owner: "Nice", weight: 12, age: 0.2 },
+            { id: 2, name:"Max", owner: "Bob", weight: 20, age: 0.4 },
+            { id: 3, name:"Chelsea", owner: "Lyn", weight: 15, age: 0.6 },
+            { id: 4, name:"Checo", owner: "Christian", weight: 10, age: 0.8 },
+
+            { id: 5, name:"Danny", owner: "Ted", weight: 11, age: 2 },
+            { id: 6, name:"Yuki", owner: "Julia", weight: 24, age: 4 },
+            { id: 7, name:"Nyck", owner: "Allan", weight: 15, age: 6 },
+            { id: 8, name:"Lando", owner: "Chris", weight: 18, age: 8 },
+
+            { id: 9, name:"Oscar", owner: "Victor", weight: 8, age: 11 },
+            { id: 10, name:"Zhou", owner: "Angelo", weight: 23, age: 12 },
+            { id: 11, name:"Lewis", owner: "Justin", weight: 9, age: 14 },
+            { id: 12, name:"Valtteri", owner: "John", weight: 21, age: 15 },
+
+            { id: 13, name:"Nico", owner: "Cyril", weight: 13, age: 16 },
+            { id: 14, name:"Kevin", owner: "Joseph", weight: 16, age: 18 },
+            { id: 15, name:"Logan", owner: "Mike", weight: 19, age: 20 },
+            { id: 16, name:"Alex", owner: "Robert", weight: 17, age: 22 }
         ];
+
+        for (const animaldetails of animals) 
+        {
+            tableHTML += `<tr><td>${animaldetails.id}</td><td>${animaldetails.name}</td><td>${animaldetails.owner}</td><td>${animaldetails.weight}</td><td>${animaldetails.age}</td></tr>`;
+        }
             //Closing of the table declaration
         tableHTML += '</table>';
             //This line gets the table information and displays it as HTML
