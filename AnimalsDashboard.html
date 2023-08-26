@@ -78,7 +78,15 @@
         {
             //Determining the age bracket of the animal
             const ageBracket = getAgeBracket(animaldetails.age);
-            tableHTML += `<tr><td>${animaldetails.id}</td><td>${animaldetails.name}</td><td>${animaldetails.owner}</td><td>${animaldetails.weight}</td><td>${animaldetails.age}</td><td>${ageBracket}</td></tr>`;
+            tableHTML += 
+            `<tr>
+                <td>${animaldetails.id}</td>
+                <td>${animaldetails.name}</td>
+                <td>${animaldetails.owner}</td>
+                <td>${animaldetails.weight}</td>
+                <td>${animaldetails.age}</td>
+                <td>${ageBracket}</td>
+            </tr>`;
         }
             //Closing of the table declaration
         tableHTML += '</table>';
